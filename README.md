@@ -2,7 +2,13 @@
 
 ## 1. Project Introduction
 
-**Campus Buddy** is a simple website project created to provide a basic web presence for a campus-related service. This project demonstrates front-end web development, version control, and website deployment using GitHub tools.
+Campus Buddy is a web-based project developed to provide a simple and user-friendly online presence for a campus-related service. The project is built using front-end web technologies such as HTML, CSS, and JavaScript. HTML is used to create the structure of the website, CSS improves its visual appearance, and JavaScript supports client-side functionality.
+
+The project focuses on developing a website that is easy to access, understand, and use. During development, the website was improved through multiple changes, including updating the website title, improving the main heading, adding a description, and enhancing the overall styling.
+
+Campus Buddy also demonstrates how modern software development tools can be used to manage and publish a website. Git is used to track code changes, while GitHub stores the project repository and maintains its commit history. GitHub Actions automates the deployment workflow, and GitHub Pages makes the website accessible online.
+
+This project provides practical experience in both web development and DevOps practices. It demonstrates how a website can be developed, maintained, version-controlled, and deployed through a structured workflow.
 
 ## 2. Project Objective
 
