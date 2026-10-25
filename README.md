@@ -22,7 +22,7 @@ The main objectives of this project are:
 - **GitHub Actions:** https://github.com/1805AC/CampusBuddy/actions/runs/40180464582
 - **Commit History:** https://github.com/1805AC/CampusBuddy/commits/main/
 - **GitHub Pages Settings:** https://github.com/1805AC/CampusBuddy/settings/pages
-- **Project Workflow File:** .github/workflows/pages.yml
+- **Project Workflow File:** https://github.com/1805AC/CampusBuddy/blob/main/.github/workflows/pages.yml
 
 
 ## 4. Technology Stack
