@@ -377,6 +377,10 @@ footer {
     .stats {
         gap: 10px;
     }
+    body {
+    background-color: #f0f4ff;
+    font-family: Arial, sans-serif;
+}
 
     .stat-card {
         padding: 15px;
