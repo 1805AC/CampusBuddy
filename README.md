@@ -197,7 +197,7 @@ Ensure the image filenames below match the actual files in your repository.
 
 This screenshot demonstrates the website's appearance in a browser, including its layout, main heading, description, and styling.
 
-[View website screenshot in the repository](https://1805ac.github.io/CampusBuddy/)
+[View website](https://1805ac.github.io/CampusBuddy/)
 
 ### 2. GitHub Repository
 
