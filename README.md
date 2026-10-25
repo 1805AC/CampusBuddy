@@ -20,7 +20,7 @@ The main objectives of this project are:
 - **GitHub Repository:** https://github.com/1805AC/CampusBuddy
 - **Live Website:** https://1805ac.github.io/CampusBuddy/
 - **GitHub Actions:** https://github.com/1805AC/CampusBuddy/actions/runs/40180464582
-- **Commit History:** github.com/1805AC/CampusBuddy/commits/main/index.html
+- **Commit History:** https://github.com/1805AC/CampusBuddy/commits/main/
 - **GitHub Pages Settings:** https://github.com/1805AC/CampusBuddy/settings/pages
 - **Project Workflow File:** .github/workflows/pages.yml
 
@@ -227,7 +227,7 @@ This screenshot provides evidence of the deployment workflow and its execution s
 
 This screenshot demonstrates the project's incremental development through multiple commits.
 
-[View commit history](github.com/1805AC/CampusBuddy/commits/main/index.html)
+[View commit history](https://github.com/1805AC/CampusBuddy/commits/main/)
 
 
 ## 11. Project Outcome
