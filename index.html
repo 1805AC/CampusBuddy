@@ -1,0 +1,234 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusBuddy | Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="#home" class="brand">🎓 CampusBuddy</a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#planner">Study Planner</a>
+            <a href="#timer">Focus Timer</a>
+            <a href="#expenses">Expenses</a>
+            <a href="#notes">Notes</a>
+            <a href="#opportunities">Events & Jobs</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="home" class="hero">
+            <div>
+                <p class="eyebrow">YOUR STUDENT COMPANION</p>
+                <h1>Welcome to CampusBuddy! 👋</h1>
+                <p>
+                    Organize your studies, manage your expenses,
+                    save your notes, and explore opportunities.
+                </p>
+            </div>
+
+            <div class="hero-icon">📚</div>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <span>📋</span>
+                <p>Total Tasks</p>
+                <h2 id="taskCount">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <span>✅</span>
+                <p>Completed Tasks</p>
+                <h2 id="completedCount">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <span>💰</span>
+                <p>Total Expenses</p>
+                <h2 id="expenseTotal">₹0.00</h2>
+            </article>
+
+            <article class="stat-card">
+                <span>📝</span>
+                <p>Saved Notes</p>
+                <h2 id="noteCount">0</h2>
+            </article>
+        </section>
+
+        <section id="planner" class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>📚 Study Planner</h2>
+                    <p>Plan your study tasks and track your progress.</p>
+                </div>
+            </div>
+
+            <form id="taskForm" class="input-row">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a study task..."
+                    required
+                    maxlength="150"
+                >
+
+                <button type="submit">+ Add Task</button>
+            </form>
+
+            <ul id="taskList" class="item-list"></ul>
+        </section>
+
+        <section id="timer" class="panel timer-panel">
+            <h2>⏱️ Focus Timer</h2>
+            <p>Concentrate on your studies without distractions.</p>
+
+            <div id="timerDisplay" class="timer-display">25:00</div>
+
+            <div class="button-row">
+                <button id="startTimer">Start</button>
+                <button id="pauseTimer" class="secondary">Pause</button>
+                <button id="resetTimer" class="secondary">Reset</button>
+            </div>
+
+            <p id="timerMessage" class="message" aria-live="polite">
+                Ready to study?
+            </p>
+        </section>
+
+        <section id="expenses" class="panel">
+            <h2>💰 Expense Tracker</h2>
+            <p>Keep track of your daily spending.</p>
+
+            <form id="expenseForm" class="input-row">
+                <input
+                    type="text"
+                    id="expenseName"
+                    placeholder="Expense name"
+                    required
+                    maxlength="100"
+                >
+
+                <input
+                    type="number"
+                    id="expenseAmount"
+                    placeholder="Amount (₹)"
+                    min="0.01"
+                    max="100000000"
+                    step="0.01"
+                    required
+                >
+
+                <button type="submit">Add Expense</button>
+            </form>
+
+            <h3>Total Spent: <span id="expenseTotalDetail">₹0.00</span></h3>
+
+            <ul id="expenseList" class="item-list"></ul>
+        </section>
+
+        <section id="notes" class="panel">
+            <h2>📝 My Notes</h2>
+            <p>Save important study notes and reminders.</p>
+
+            <form id="noteForm">
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Note title"
+                    required
+                    maxlength="100"
+                >
+
+                <textarea
+                    id="noteContent"
+                    placeholder="Write your note here..."
+                    required
+                    maxlength="5000"
+                    rows="4"
+                ></textarea>
+
+                <button type="submit">Save Note</button>
+            </form>
+
+            <div id="noteList" class="note-grid"></div>
+        </section>
+
+        <section id="opportunities" class="panel">
+            <h2>🎉 Campus Events</h2>
+            <p>Explore activities and opportunities for students.</p>
+
+            <div class="opportunity-grid">
+
+                <article class="opportunity-card">
+                    <span class="tag">CAMPUS EVENT</span>
+                    <h3>Technical Fest</h3>
+                    <p>
+                        Participate in technical competitions,
+                        project exhibitions, and coding activities.
+                    </p>
+                    <p><strong>Date:</strong> Check with your college.</p>
+                </article>
+
+                <article class="opportunity-card">
+                    <span class="tag">CAMPUS EVENT</span>
+                    <h3>Workshop Day</h3>
+                    <p>
+                        Learn new skills through technical workshops
+                        and practical demonstrations.
+                    </p>
+                    <p><strong>Date:</strong> Check with your college.</p>
+                </article>
+
+            </div>
+
+            <h2 class="subheading">💼 Jobs & Internships</h2>
+
+            <div class="opportunity-grid">
+
+                <article class="opportunity-card">
+                    <span class="tag">INTERNSHIP</span>
+                    <h3>Web Development Intern</h3>
+                    <p>
+                        Learn HTML, CSS, JavaScript, and website development.
+                    </p>
+                    <p><strong>Suitable for:</strong> Beginners</p>
+                </article>
+
+                <article class="opportunity-card">
+                    <span class="tag">JOB PREPARATION</span>
+                    <h3>Data Analyst Preparation</h3>
+                    <p>
+                        Practise Excel, SQL, Python, and data visualization.
+                    </p>
+                    <p><strong>Suitable for:</strong> Students learning data analysis</p>
+                </article>
+
+            </div>
+
+            <p class="notice">
+                Note: These are sample listings for demonstration.
+                They are not confirmed events or live job vacancies.
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2026 CampusBuddy | Built for College Students 🎓</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
+```
