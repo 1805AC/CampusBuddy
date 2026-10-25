@@ -191,9 +191,9 @@ Ensure the image filenames below match the actual files in your repository.
 
 ### 1. Campus Buddy Website
 
-**File:** screenshots/screenshots/home.png.png
+**File:** 'screenshots/screenshots/home.png.png'
 
-[Campus Buddy website screenshot](screenshots/screenshots/home.png.png)
+![Campus Buddy website screenshot](screenshots/screenshots/home.png.png)
 
 This screenshot demonstrates the website's appearance in a browser, including its layout, main heading, description, and styling.
 
