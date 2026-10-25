@@ -191,7 +191,7 @@ Ensure the image filenames below match the actual files in your repository.
 
 ### 1. Campus Buddy Website
 
-**File:** 'screenshots/screenshots/home.png.png'
+**File:** screenshots/screenshots/home.png.png
 
 [Campus Buddy website screenshot](screenshots/screenshots/home.png.png)
 
